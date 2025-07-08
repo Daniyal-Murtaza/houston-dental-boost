@@ -13,8 +13,21 @@ import {
   MessageSquare,
   Send
 } from "lucide-react";
+import { useEffect } from "react";
 
 const Contact = () => {
+  // Dynamically load Calendly script
+  useEffect(() => {
+    const scriptId = "calendly-widget-script";
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <section className="py-20 bg-gradient-trust">
       <div className="container mx-auto px-6">
@@ -164,20 +177,13 @@ const Contact = () => {
                   website needs and how I can help you attract more patients.
                 </p>
                 
-                {/* Calendly Embed Placeholder */}
-                <div className="bg-muted/20 border-2 border-dashed border-muted rounded-lg p-8 text-center">
-                  <Calendar className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                  <div className="text-sm text-muted-foreground mb-4">
-                    Calendly booking widget will be embedded here
-                  </div>
-                  <Button variant="cta" size="lg">
-                    <Calendar className="w-5 h-5" />
-                    Book Free Consultation
-                  </Button>
-                  <div className="text-xs text-muted-foreground mt-2">
-                    Link: https://calendly.com/yourusername
-                  </div>
-                </div>
+                {/* Calendly inline widget begin */}
+                <div
+                  className="calendly-inline-widget"
+                  data-url="https://calendly.com/danielzaydee/30min?hide_gdpr_banner=1"
+                  style={{ minWidth: "320px", height: "700px" }}
+                ></div>
+                {/* Calendly inline widget end */}
               </Card>
             </div>
           </div>
