@@ -7,6 +7,7 @@ import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import AudioPlayer from "@/components/AudioPlayer";
 
 const Index = () => {
   return (
@@ -44,6 +45,7 @@ const Index = () => {
       </main>
 
       <WhatsAppButton />
+      <AudioPlayer />
       
       {/* Footer */}
       <footer className="bg-foreground text-background py-8">

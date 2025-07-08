@@ -39,15 +39,15 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-4">
-              <Calendar className="w-5 h-5" />
+            <Button variant="cta" size="lg" className="text-lg px-8 py-4 hover:scale-110 hover:shadow-strong transition-all duration-300 animate-glow group">
+              <Calendar className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
               Book a Free Website Audit
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
             
-            <Button variant="trust" size="lg" className="text-lg px-8 py-4">
+            <Button variant="trust" size="lg" className="text-lg px-8 py-4 hover:scale-105 transition-all duration-300 group">
               View My Work
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
           </div>
           
@@ -68,9 +68,18 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-32 right-16 w-32 h-32 bg-primary-glow/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      {/* Enhanced Floating Elements */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl animate-float"></div>
+      <div className="absolute bottom-32 right-16 w-32 h-32 bg-primary-glow/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-primary/5 rounded-full blur-lg animate-float" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute bottom-1/4 left-20 w-16 h-16 bg-primary-glow/8 rounded-full blur-xl animate-float" style={{ animationDelay: '3s' }}></div>
+      
+      {/* Animated particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-primary rounded-full opacity-30 animate-float" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-primary-glow rounded-full opacity-40 animate-float" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-1/2 right-1/3 w-1.5 h-1.5 bg-primary rounded-full opacity-20 animate-float" style={{ animationDelay: '2.5s' }}></div>
+      </div>
     </section>
   );
 };

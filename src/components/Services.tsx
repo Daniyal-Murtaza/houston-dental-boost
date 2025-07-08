@@ -70,9 +70,15 @@ const Services = () => {
             {services.map((service, index) => (
               <Card 
                 key={service.title} 
-                className="p-6 shadow-card hover:shadow-strong transition-all duration-300 relative group cursor-pointer transform hover:scale-105"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="p-6 shadow-card hover:shadow-strong transition-all duration-500 relative group cursor-pointer transform hover:scale-105 hover:rotate-1 animate-bounce-in overflow-hidden"
+                style={{ animationDelay: `${index * 0.15}s` }}
               >
+                {/* Shimmer effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
+                
+                {/* Floating background element */}
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary/5 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                
                 {service.popular && (
                   <Badge className="absolute -top-3 left-6 bg-gradient-primary text-white">
                     Most Popular
@@ -80,10 +86,10 @@ const Services = () => {
                 )}
                 
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 bg-trust rounded-lg group-hover:bg-primary group-hover:text-white transition-colors">
-                    <service.icon className="w-6 h-6" />
+                  <div className="p-3 bg-trust rounded-lg group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
+                    <service.icon className="w-6 h-6 transition-transform duration-300 group-hover:scale-110" />
                   </div>
-                  <h3 className="text-xl font-bold">{service.title}</h3>
+                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors duration-300">{service.title}</h3>
                 </div>
                 
                 <p className="text-muted-foreground mb-4 leading-relaxed">

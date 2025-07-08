@@ -48,9 +48,14 @@ const Testimonials = () => {
             {testimonials.map((testimonial, index) => (
               <Card 
                 key={testimonial.name}
-                className="p-6 shadow-card hover:shadow-strong transition-all duration-300 animate-fade-in relative"
-                style={{ animationDelay: `${index * 0.2}s` }}
+                className="p-6 shadow-card hover:shadow-strong transition-all duration-500 animate-bounce-in relative group cursor-pointer hover:scale-105 hover:rotate-1 overflow-hidden"
+                style={{ animationDelay: `${index * 0.25}s` }}
               >
+                {/* Glowing border effect */}
+                <div className="absolute inset-0 rounded-lg border-2 border-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-glow" />
+                
+                {/* Background animation */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-primary-glow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <Quote className="absolute top-4 right-4 w-6 h-6 text-primary/20" />
                 
                 <div className="flex items-center gap-1 mb-4">

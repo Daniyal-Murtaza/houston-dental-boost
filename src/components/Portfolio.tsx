@@ -66,9 +66,14 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <Card 
                 key={project.title}
-                className="p-6 shadow-card hover:shadow-strong transition-all duration-300 group cursor-pointer animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="p-6 shadow-card hover:shadow-strong transition-all duration-500 group cursor-pointer animate-bounce-in hover:scale-105 hover:-rotate-1 overflow-hidden relative"
+                style={{ animationDelay: `${index * 0.2}s` }}
               >
+                {/* Interactive background gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                {/* Shimmer effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out" />
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <Badge variant="secondary" className="mb-2 bg-trust text-trust-foreground">

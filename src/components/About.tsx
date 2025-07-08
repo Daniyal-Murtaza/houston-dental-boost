@@ -25,8 +25,10 @@ const About = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-slide-up">
-              <Card className="p-8 shadow-card">
+            <div className="animate-slide-in-left">
+              <Card className="p-8 shadow-card hover:shadow-strong transition-all duration-500 hover:scale-105 group">
+                {/* Glow effect */}
+                <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 animate-glow -z-10" />
                 <div className="flex items-center gap-3 mb-6">
                   <MapPin className="w-6 h-6 text-primary" />
                   <span className="text-lg font-semibold">Richmond, TX (77082)</span>
@@ -72,14 +74,19 @@ const About = () => {
               </Card>
             </div>
 
-            <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="relative">
+            <div className="animate-slide-in-right" style={{ animationDelay: '0.3s' }}>
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-primary rounded-lg blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 animate-glow" />
                 <img
                   src={aboutImage}
                   alt="Software developer working"
-                  className="w-full h-96 object-cover rounded-lg shadow-strong"
+                  className="w-full h-96 object-cover rounded-lg shadow-strong transform group-hover:scale-105 transition-transform duration-500 relative z-10"
                 />
-                <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-lg group-hover:opacity-20 transition-opacity duration-500 z-20"></div>
+                
+                {/* Floating elements */}
+                <div className="absolute top-4 right-4 w-4 h-4 bg-primary rounded-full opacity-60 animate-float" style={{ animationDelay: '0.5s' }} />
+                <div className="absolute bottom-6 left-6 w-3 h-3 bg-primary-glow rounded-full opacity-40 animate-float" style={{ animationDelay: '1.2s' }} />
               </div>
             </div>
           </div>
