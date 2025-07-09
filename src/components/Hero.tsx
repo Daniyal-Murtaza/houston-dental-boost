@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Star } from "lucide-react";
+import { MouseEvent } from "react";
 import heroImage from "@/assets/hero-dental.jpg";
 
 const Hero = () => {
+  const handleBookAuditClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const el = document.getElementById("schedule-call");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-trust overflow-hidden">
       {/* Background Image */}
@@ -39,7 +47,12 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-4 hover:scale-110 hover:shadow-strong transition-all duration-300 animate-glow group">
+            <Button
+              variant="cta"
+              size="lg"
+              className="text-lg px-8 py-4 hover:scale-110 hover:shadow-strong transition-all duration-300 animate-glow group"
+              onClick={handleBookAuditClick}
+            >
               <Calendar className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
               Book a Free Website Audit
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
