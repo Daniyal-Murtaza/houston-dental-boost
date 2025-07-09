@@ -61,7 +61,7 @@ const Services = () => {
               Complete <span className="bg-gradient-primary bg-clip-text text-transparent">Digital Solutions</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Everything your dental practice needs to succeed online—from modern design 
+              Everything your dental practice needs to succeed online, from modern design 
               to patient acquisition systems.
             </p>
           </div>
@@ -80,7 +80,7 @@ const Services = () => {
                 <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary/5 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
                 {service.popular && (
-                  <Badge className="absolute -top-3 left-6 bg-gradient-primary text-white">
+                  <Badge className="absolute top-3 right-2 bg-gradient-primary text-white">
                     Most Popular
                   </Badge>
                 )}
