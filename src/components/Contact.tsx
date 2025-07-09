@@ -116,7 +116,7 @@ const Contact = () => {
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="font-semibold">Richmond, TX 77082</div>
+                      <div className="font-semibold">Houston, TX 77082</div>
                       <div className="text-sm text-muted-foreground">Houston Metro Area</div>
                     </div>
                   </div>

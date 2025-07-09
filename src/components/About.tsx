@@ -19,7 +19,7 @@ const About = () => {
               About <span className="bg-gradient-primary bg-clip-text text-transparent">Your Developer</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Local Richmond software engineer with a passion for helping Houston dental practices 
+              Local Houston software engineer with a passion for helping Houston dental practices 
               succeed online through modern, converting websites.
             </p>
           </div>
@@ -31,13 +31,13 @@ const About = () => {
                 <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 animate-glow -z-10" />
                 <div className="flex items-center gap-3 mb-6">
                   <MapPin className="w-6 h-6 text-primary" />
-                  <span className="text-lg font-semibold">Richmond, TX (77082)</span>
+                  <span className="text-lg font-semibold">Houston, TX (77082)</span>
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-4">Local Expertise, Professional Results</h3>
                 
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  As a Richmond-based software engineer, I understand the unique needs of Houston-area 
+                  As a Houston based software engineer, I understand the unique needs of Houston-area 
                   dental practices. I specialize in creating websites that don't just look good—they 
                   convert visitors into patients and help your practice grow.
                 </p>
