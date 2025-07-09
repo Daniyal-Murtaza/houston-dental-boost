@@ -38,7 +38,7 @@ const About = () => {
                 
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   As a Houston based software engineer, I understand the unique needs of Houston-area 
-                  dental practices. I specialize in creating websites that don't just look good—they 
+                  dental practices. I specialize in creating websites that don't just look good, they 
                   convert visitors into patients and help your practice grow.
                 </p>
 
