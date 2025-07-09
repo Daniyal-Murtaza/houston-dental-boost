@@ -37,7 +37,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-trust">
+    <section className="py-20 bg-gradient-trust" id="recent-projects">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">

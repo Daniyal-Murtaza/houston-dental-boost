@@ -11,6 +11,13 @@ const Hero = () => {
       el.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
+  const handleViewWorkClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const el = document.getElementById("recent-projects");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-trust overflow-hidden">
       {/* Background Image */}
@@ -58,7 +65,12 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
             
-            <Button variant="trust" size="lg" className="text-lg px-8 py-4 hover:scale-105 transition-all duration-300 group">
+            <Button
+              variant="trust"
+              size="lg"
+              className="text-lg px-8 py-4 hover:scale-105 transition-all duration-300 group"
+              onClick={handleViewWorkClick}
+            >
               View My Work
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
