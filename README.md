@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Houston Dental Boost 🦷
 
 A modern, professional dental practice website built with React and TypeScript, designed to help Houston dental practices establish a strong online presence and attract new patients.
@@ -179,6 +178,28 @@ npm run build
 
 This creates a `dist/` folder with optimized production files.
 
+## 🌐 GitHub Pages Deployment
+
+This project is configured for automatic deployment to GitHub Pages. Follow these steps:
+
+### 1. Enable GitHub Pages
+1. Go to your repository on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under **Source**, select **GitHub Actions**
+4. Save the settings
+
+### 2. Push Your Code
+The GitHub Actions workflow will automatically:
+- Build your project when you push to the `main` branch
+- Deploy the built files to GitHub Pages
+- Make your site available at `https://yourusername.github.io/houston-dental-boost/`
+
+### 3. Custom Domain (Optional)
+If you want to use a custom domain:
+1. In **Settings** → **Pages**, enter your custom domain
+2. Add a `CNAME` file to the `public/` folder with your domain name
+3. Configure your DNS settings accordingly
+
 ### Deployment Options
 
 1. **Netlify**
@@ -191,10 +212,11 @@ This creates a `dist/` folder with optimized production files.
    - Framework preset: Vite
    - Build command: `npm run build`
 
-3. **GitHub Pages**
+3. **GitHub Pages** (Recommended)
    - Enable GitHub Pages in repository settings
-   - Set source to GitHub Actions
-   - Use the `dist` folder as the source
+   - Set source to "GitHub Actions"
+   - The project includes an automated workflow (`.github/workflows/deploy.yml`)
+   - Your site will be available at: `https://yourusername.github.io/houston-dental-boost/`
 
 4. **Traditional Hosting**
    - Upload the contents of the `dist` folder to your web server
@@ -280,6 +302,3 @@ For support and questions:
 ---
 
 **Built with ❤️ for Houston dental practices**
-=======
-
->>>>>>> 1240d7acece9f1b1eae476151fd6acca71819ea0
