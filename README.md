@@ -169,6 +169,7 @@ The project is configured for production builds with:
 - **PostCSS** processing
 - **Tailwind CSS** purging
 
+<<<<<<< HEAD
 ## 🚀 Deployment
 
 ### Build for Production
@@ -280,6 +281,8 @@ If you want to use a custom domain:
    - Screen reader optimization
    - Keyboard navigation improvements
 
+=======
+>>>>>>> 807cd4990821b67955e7b8fca6cd9d486af0b2bd
 ## 🤝 Contributing
 
 1. Fork the repository
