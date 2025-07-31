@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Houston Dental Boost 🦷
 
 A modern, professional dental practice website built with React and TypeScript, designed to help Houston dental practices establish a strong online presence and attract new patients.
@@ -279,3 +280,6 @@ For support and questions:
 ---
 
 **Built with ❤️ for Houston dental practices**
+=======
+
+>>>>>>> 1240d7acece9f1b1eae476151fd6acca71819ea0
