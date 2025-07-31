@@ -169,7 +169,6 @@ The project is configured for production builds with:
 - **PostCSS** processing
 - **Tailwind CSS** purging
 
-<<<<<<< HEAD
 ## 🚀 Deployment
 
 ### Build for Production
@@ -195,7 +194,19 @@ The GitHub Actions workflow will automatically:
 - Deploy the built files to GitHub Pages
 - Make your site available at `https://yourusername.github.io/houston-dental-boost/`
 
-### 3. Custom Domain (Optional)
+### 3. Troubleshooting 404 Errors
+If you're getting a 404 error:
+
+1. **Check GitHub Actions**: Go to your repository → Actions tab → Check if the latest workflow run was successful
+2. **Verify GitHub Pages Settings**: 
+   - Go to Settings → Pages
+   - Ensure "Source" is set to "GitHub Actions"
+   - Check that the deployment was successful
+3. **Wait for Deployment**: GitHub Pages can take 5-10 minutes to update after a successful deployment
+4. **Check the URL**: Make sure you're using the correct URL format: `https://yourusername.github.io/houston-dental-boost/`
+5. **Clear Browser Cache**: Try opening the site in an incognito/private window
+
+### 4. Custom Domain (Optional)
 If you want to use a custom domain:
 1. In **Settings** → **Pages**, enter your custom domain
 2. Add a `CNAME` file to the `public/` folder with your domain name
@@ -280,9 +291,6 @@ If you want to use a custom domain:
    - WCAG 2.1 AA compliance
    - Screen reader optimization
    - Keyboard navigation improvements
-
-=======
->>>>>>> 807cd4990821b67955e7b8fca6cd9d486af0b2bd
 ## 🤝 Contributing
 
 1. Fork the repository
