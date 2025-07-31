@@ -1,73 +1,281 @@
-# Welcome to your Lovable project
+# Houston Dental Boost 🦷
 
-## Project info
+A modern, professional dental practice website built with React and TypeScript, designed to help Houston dental practices establish a strong online presence and attract new patients.
 
-**URL**: https://lovable.dev/projects/c0cf64e2-e8a5-41d1-a9b8-361ac7991d8c
+## 🚀 Project Overview
 
-## How can I edit this code?
+Houston Dental Boost is a comprehensive dental practice website template that showcases dental services, patient testimonials, before/after case studies, and provides easy contact methods. The site features a modern, responsive design optimized for conversion and user experience.
 
-There are several ways of editing your application.
+### Key Features
 
-**Use Lovable**
+- **Responsive Design**: Mobile-first approach with seamless desktop experience
+- **Modern UI/UX**: Clean, professional design with smooth animations
+- **Contact Integration**: WhatsApp button for instant communication
+- **Audio Player**: Background audio for enhanced user engagement
+- **Portfolio Showcase**: Before/after case studies and service highlights
+- **Testimonials Section**: Patient reviews and trust-building content
+- **SEO Optimized**: Built with search engine optimization in mind
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c0cf64e2-e8a5-41d1-a9b8-361ac7991d8c) and start prompting.
+## 🛠️ Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+### Core Technologies
+- **React 18.3.1** - Modern React with hooks and functional components
+- **TypeScript 5.5.3** - Type-safe JavaScript development
+- **Vite 5.4.1** - Fast build tool and development server
+- **React Router DOM 6.26.2** - Client-side routing
 
-**Use your preferred IDE**
+### UI Framework & Styling
+- **Tailwind CSS 3.4.11** - Utility-first CSS framework
+- **shadcn/ui** - High-quality React components built on Radix UI
+- **Radix UI** - Accessible, unstyled UI primitives
+- **Lucide React 0.462.0** - Beautiful, customizable icons
+- **Tailwind CSS Animate 1.0.7** - Smooth animations and transitions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### State Management & Data Fetching
+- **TanStack Query 5.56.2** - Powerful data fetching and caching
+- **React Hook Form 7.53.0** - Performant forms with easy validation
+- **Zod 3.23.8** - TypeScript-first schema validation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Additional Libraries
+- **Embla Carousel React 8.3.0** - Touch-friendly carousel component
+- **Recharts 2.12.7** - Composable charting library
+- **Sonner 1.5.0** - Toast notifications
+- **Date-fns 3.6.0** - Modern JavaScript date utility library
+- **CMDK 1.0.0** - Command menu component
 
-Follow these steps:
+### Development Tools
+- **ESLint 9.9.0** - Code linting and formatting
+- **PostCSS 8.4.47** - CSS processing
+- **Autoprefixer 10.4.20** - CSS vendor prefixing
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 Project Structure
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+houston-dental-boost/
+├── public/                 # Static assets
+│   ├── favicon.ico
+│   ├── placeholder.svg
+│   └── robots.txt
+├── src/
+│   ├── components/         # React components
+│   │   ├── ui/            # shadcn/ui components
+│   │   ├── About.tsx      # About section
+│   │   ├── AudioPlayer.tsx # Background audio
+│   │   ├── CaseStudy.tsx  # Before/after cases
+│   │   ├── Contact.tsx    # Contact form
+│   │   ├── Hero.tsx       # Hero section
+│   │   ├── Navigation.tsx # Navigation bar
+│   │   ├── Portfolio.tsx  # Portfolio showcase
+│   │   ├── Services.tsx   # Services section
+│   │   ├── Testimonials.tsx # Patient reviews
+│   │   └── WhatsAppButton.tsx # WhatsApp integration
+│   ├── pages/             # Page components
+│   │   ├── Index.tsx      # Main page
+│   │   └── NotFound.tsx   # 404 page
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   ├── assets/            # Images and media
+│   ├── App.tsx            # Main app component
+│   └── main.tsx           # Entry point
+├── package.json           # Dependencies and scripts
+├── tailwind.config.ts     # Tailwind configuration
+├── vite.config.ts         # Vite configuration
+└── tsconfig.json          # TypeScript configuration
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- **Node.js** (version 18 or higher)
+- **npm** or **yarn** or **bun** package manager
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation
 
-## What technologies are used for this project?
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd houston-dental-boost
+   ```
 
-This project is built with:
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   bun install
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   bun dev
+   ```
 
-## How can I deploy this project?
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to view the application
 
-Simply open [Lovable](https://lovable.dev/projects/c0cf64e2-e8a5-41d1-a9b8-361ac7991d8c) and click on Share -> Publish.
+### Available Scripts
 
-## Can I connect a custom domain to my Lovable project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-Yes, you can!
+## 🎨 Customization
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Styling
+The project uses Tailwind CSS with a custom design system. Key customization points:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Colors**: Defined in `tailwind.config.ts` under the `theme.extend.colors` section
+- **Animations**: Custom keyframes and animations in the Tailwind config
+- **Components**: shadcn/ui components can be customized in `src/components/ui/`
+
+### Content
+Update the following components to customize content:
+- `src/components/Hero.tsx` - Main hero section
+- `src/components/About.tsx` - About section content
+- `src/components/Services.tsx` - Services offered
+- `src/components/Portfolio.tsx` - Case studies and portfolio
+- `src/components/Testimonials.tsx` - Patient testimonials
+- `src/components/Contact.tsx` - Contact information
+
+### Images
+Replace images in `src/assets/` with your own:
+- `hero-dental.jpg` - Hero section background
+- `about-developer.jpg` - About section image
+- `before-after.jpg` - Case study images
+- `portfolio-grid.jpg` - Portfolio images
+
+## 🔧 Configuration
+
+### Environment Variables
+Create a `.env` file in the root directory for any environment-specific configurations:
+
+```env
+VITE_API_URL=your_api_url_here
+VITE_WHATSAPP_NUMBER=your_whatsapp_number
+```
+
+### Build Configuration
+The project is configured for production builds with:
+- **Vite** for fast builds
+- **TypeScript** compilation
+- **PostCSS** processing
+- **Tailwind CSS** purging
+
+## 🚀 Deployment
+
+### Build for Production
+```bash
+npm run build
+```
+
+This creates a `dist/` folder with optimized production files.
+
+### Deployment Options
+
+1. **Netlify**
+   - Connect your repository
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+
+2. **Vercel**
+   - Import your repository
+   - Framework preset: Vite
+   - Build command: `npm run build`
+
+3. **GitHub Pages**
+   - Enable GitHub Pages in repository settings
+   - Set source to GitHub Actions
+   - Use the `dist` folder as the source
+
+4. **Traditional Hosting**
+   - Upload the contents of the `dist` folder to your web server
+
+## 🔮 Future Directions
+
+### Planned Features
+
+1. **Content Management System (CMS)**
+   - Integrate with Strapi or Sanity for easy content updates
+   - Admin panel for non-technical users
+
+2. **Advanced SEO Features**
+   - Dynamic meta tags
+   - Structured data (JSON-LD)
+   - Sitemap generation
+   - Blog functionality
+
+3. **Performance Optimizations**
+   - Image optimization and lazy loading
+   - Code splitting and lazy loading
+   - Service worker for offline functionality
+   - CDN integration
+
+4. **Enhanced User Experience**
+   - Online appointment booking system
+   - Patient portal integration
+   - Live chat functionality
+   - Multi-language support
+
+5. **Analytics and Tracking**
+   - Google Analytics 4 integration
+   - Conversion tracking
+   - Heat mapping tools
+   - A/B testing capabilities
+
+6. **Mobile App**
+   - React Native companion app
+   - Push notifications
+   - Offline functionality
+
+### Technical Improvements
+
+1. **Testing**
+   - Unit tests with Jest and React Testing Library
+   - Integration tests with Cypress
+   - E2E testing with Playwright
+
+2. **Performance**
+   - Bundle analysis and optimization
+   - Core Web Vitals optimization
+   - Progressive Web App (PWA) features
+
+3. **Security**
+   - Content Security Policy (CSP)
+   - HTTPS enforcement
+   - Form validation and sanitization
+
+4. **Accessibility**
+   - WCAG 2.1 AA compliance
+   - Screen reader optimization
+   - Keyboard navigation improvements
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support
+
+For support and questions:
+- Create an issue in the repository
+- Contact the development team
+- Check the documentation
+
+---
+
+**Built with ❤️ for Houston dental practices**
