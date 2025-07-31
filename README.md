@@ -191,6 +191,3 @@ For support and questions:
 ---
 
 **Built with ❤️ for Houston dental practices**
-=======
-
->>>>>>> 1240d7acece9f1b1eae476151fd6acca71819ea0
